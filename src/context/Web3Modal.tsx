@@ -34,7 +34,7 @@ createWeb3Modal({
   chains,
   projectId,
   enableAnalytics: true,
-  themeMode: 'dark',
+  themeMode: 'light',
 });
 
 export function Web3ModalProvider({ children }: { children: React.ReactNode }) {
