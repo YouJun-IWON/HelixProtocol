@@ -9,25 +9,25 @@ import {
 
 export const navlinks = [
   {
-    name: 'Dashboard',
+    name: '/',
     imgUrl: dashboard,
     link: '/',
   },
   {
     name: 'Announcements',
     imgUrl: createCampaign,
-    link: '/',
+    link: '/announcements',
   },
   {
     name: 'Payment',
     imgUrl: payment,
-    link: '/',
+    link: '/payment',
     disabled: true,
   },
   {
     name: 'Withdraw',
     imgUrl: withdraw,
-    link: '/',
+    link: '/withdraw',
     disabled: true,
   },
   {
@@ -35,10 +35,5 @@ export const navlinks = [
     imgUrl: profile,
     link: '/profile',
   },
-  {
-    name: 'Logout',
-    imgUrl: logout,
-    link: '/',
-    disabled: true,
-  },
+  
 ];

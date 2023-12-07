@@ -25,7 +25,7 @@ import { Icon } from './icons/side-icons';
 
 const Sidebar = () => {
   const router = useRouter();
-  const [isActive, setIsActive] = useState('dashboard');
+  const [isActive, setIsActive] = useState('/');
   const { open } = useWeb3Modal();
   const { address, chainId, isConnected } = useWeb3ModalAccount();
 
@@ -49,10 +49,6 @@ const Sidebar = () => {
                     {...link}
                     isActive={isActive}
                     handleClick={() => {
-                      if (link.name === 'Logout') {
-                        disconnect();
-                      }
-
                       if (!link.disabled) {
                         setIsActive(link.name);
                         router.push(link.link);
@@ -82,7 +78,8 @@ const Sidebar = () => {
               if (chainId !== 1440002) {
                 open({ view: 'Networks' });
               } else {
-                router.push('/profile');
+                open({ view: 'Account' });
+                // router.push('/profile');
               }
             }}
           >

@@ -17,7 +17,7 @@ export default function ConnectButton() {
       <button
         type='button'
         onClick={() => open()}
-        className='text-white bg-sky-400 hover:bg-sky-400/90 focus:ring-4 focus:ring-sky-400/50 focus:outline-none font-medium rounded-full text-md px-2.5 py-2.5 text-center inline-flex items-center dark:focus:ring-sky-400/50 '
+        className='text-white bg-[#0189FF] hover:bg-sky-400/90 focus:ring-4 focus:ring-sky-400/50 focus:outline-none font-medium rounded-full text-md px-2.5 py-2.5 text-center inline-flex items-center dark:focus:ring-sky-400/50 '
       >
         <svg
           fill='none'

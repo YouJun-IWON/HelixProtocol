@@ -6,22 +6,23 @@ import Link from 'next/link';
 import CustomButton from './CustomButton';
 import { useRouter } from 'next/navigation';
 import { useWeb3Modal, useWeb3ModalAccount } from '@web3modal/ethers5/react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import CustomMainButton from './CustomMainButton';
 
 const Navbar = () => {
+
   const { open } = useWeb3Modal();
   const [toggleDrawer, setToggleDrawer] = useState(false);
   const { address, chainId, isConnected } = useWeb3ModalAccount();
   const [isActive, setIsActive] = useState('dashboard');
   const router = useRouter();
   return (
-    <div className='flex md:flex-row mt-4 flex-col-reverse justify-center items-center mb-[35px] gap-8'>
-      <div className=' flex-1 flex py-2 pl-4 pr-2 h-[52px] bg-white rounded-[10px] shadow-md'>
+    <div className='flex md:flex-row mt-4 flex-col-reverse justify-center items-center mb-[35px] gap-8' >
+      <div className=' flex-1 flex py-2 pl-4 pr-2 h-[52px] bg-white rounded-[10px] shadow-md focus:border-2 focus:border-blue-400'>
         <input
           type='text'
           placeholder='Search for projects or funds'
-          className='flex w-full font-epilogue font-normal text-[14px] placeholder:text-[#4b5264] text-black bg-transparent outline-none'
+          className='flex w-full  font-epilogue font-normal text-[14px] placeholder:text-[#4b5264] text-black bg-transparent outline-none'
         />
 
         <div className='w-[72px] h-full rounded-[10px] bg-[#0189FF] flex justify-center items-center cursor-pointer'>
