@@ -1,6 +1,5 @@
 import Navbar from '@/components/Navbar';
-import Sidebar from '@/components/Sidebar';
-import { useState, useEffect } from 'react';
+
 import { Toaster } from '@/components/ui/toaster';
 import dynamic from 'next/dynamic';
 
