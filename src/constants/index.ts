@@ -14,7 +14,7 @@ export const navlinks = [
     link: '/',
   },
   {
-    name: 'Announcements',
+    name: 'Docs',
     imgUrl: createCampaign,
     link: '/announcements',
   },
@@ -34,6 +34,6 @@ export const navlinks = [
     name: 'Profile',
     imgUrl: profile,
     link: '/profile',
+    disabled: true,
   },
-  
 ];

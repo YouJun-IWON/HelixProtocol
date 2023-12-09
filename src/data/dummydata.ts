@@ -6,7 +6,7 @@ export const dummydata = [
     raise: '4383258.00',
     rate: 25.51,
     date: '2024-01-26T21:36:28.964Z',
-    status: 'Ready',
+    status: 'Sale',
     hardcap: true,
     wlstage: false,
     allocation: 0,

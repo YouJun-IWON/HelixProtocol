@@ -1,5 +1,5 @@
 import Navbar from '@/components/Navbar';
-
+import Script from 'next/script';
 import { Toaster } from '@/components/ui/toaster';
 import dynamic from 'next/dynamic';
 
@@ -17,6 +17,7 @@ const MainLayout = async ({ children }: { children: React.ReactNode }) => {
         <main>{children}</main>
         <Toaster />
       </div>
+      <Script src='https://unpkg.com/@gemwallet/api@3.5.1/umd/gemwallet-api.js' />
     </main>
   );
 };

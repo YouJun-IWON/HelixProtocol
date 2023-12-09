@@ -97,6 +97,9 @@ const SheetItem = () => {
                 Public sale has ended <br />
                 Contributions are now claimable
               </h2>
+              <p>
+                Token Address : 0x57343e19A5182e1d1a3ab700D4B692B7312587E1 (LIX)
+              </p>
             </div>
             <div className='grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
               <div className='text-center text-gray-500 '>
